@@ -14,6 +14,90 @@ object {
 	max-width: 100%;
 }
 
+/* Make sure embeds and iframes fit their containers. */
+/* embed,
+iframe,
+object {
+	max-width: 800px;
+} */
+
+/*  Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.hfeed{}
+.site-header{width:100%;padding:0;}
+.site-branding{width:100%;padding:0;overflow:auto;} /* from site-main to site-branding */
+#primary{width:63%;padding:0;float:right;display:inline;} /* from content-area to content */
+#secondary{width:35%;padding:0;float:left;display:inline;}/* from .widget-area to #secondary */
+.site-footer{width:100%;padding:0;}
+.menu-toggle, .nav-menu.toggled {
+			display: block;
+		}
+		.nav-menu.toggled li {
+			width: 100%;
+			text-align: left;
+		}
+		.main-navigation, .nav-menu.toggled, .menu-toggle {
+			float: left;
+		}
+		.main-navigation ul {
+			display: none;
+		}
+		.menu-main-menu-container {
+			float: left;
+			}
+}
+
+/*  Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+.hfeed{width:100%;padding:0 10%;}
+.site-header{width:100%;padding:0;}
+.site-branding{width:100%;padding:0;} /* from site-main to site-branding */
+#primary{width:100%;padding:0;} /* from content-area to content */
+#secondary{width:100%;padding:0;}/* from .widget-area to #secondary */
+.site-footer{width:100%;padding:0;}
+.menu-toggle, .nav-menu.toggled {
+			display: block;
+		}
+		.nav-menu.toggled li {
+			width: 100%;
+			text-align: left;
+		}
+		.main-navigation, .nav-menu.toggled, .menu-toggle {
+			float: left;
+		}
+		.main-navigation ul {
+			display: none;
+		}
+		.menu-main-menu-container {
+			float: left;
+			}
+}
+/*  Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (/* from .widget-area to #secondary */max-width: 767px) {
+.hfeed{width:100%;padding:0 10%;}
+.site-header{width:100%;padding:0;}
+.site-branding{width:100%;padding:0;} /* from site-main to site-branding */
+#primary{width:100%;padding:0;} /* from content-area to content */
+#secondary{width:100%;padding:0;}/* from .widget-area to #secondary */
+.site-footer{width:100%;padding:0;}
+.menu-toggle, .nav-menu.toggled {
+			display: block;
+		}
+		.nav-menu.toggled li {
+			width: 100%;
+			text-align: left;
+		}
+		.main-navigation, .nav-menu.toggled, .menu-toggle {
+			float: left;
+		}
+		.main-navigation ul {
+			display: none;
+		}
+		.menu-main-menu-container {
+			float: left;
+			}
+}
+
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
